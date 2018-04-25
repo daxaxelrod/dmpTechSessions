@@ -21,12 +21,12 @@
 <!-- start nav -->
   <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="/">Home</a></li>
-          <li><a href="/Contact">Contact</a></li>
-          <li><a href="/Resume">Resume</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#Resume">Resume</a></li>
 
         </ul>
       </div>
@@ -34,14 +34,14 @@
 
     <ul class="sidenav" id="mobile-demo">
       <li><a href="/">Home</a></li>
-      <li><a href="/Contact">Contact</a></li>
-      <li><a href="/Resume">Resume</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#Resume">Resume</a></li>
     </ul>
 <!--End nav  -->
 
 
-<div class="parallax-container">
-    <div class="parallax"><img src="http://materializecss.com/images/parallax1.jpg"></div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="http://www.seqsecurity.com/wp-content/uploads/2014/01/photodune-6462660-business-meeting-flat-illustration-m.jpg"></div>
   </div>
   <div class="section white">
     <div class="row container">
@@ -58,10 +58,10 @@
     </div>
   </div>
   <div class="parallax-container">
-    <div class="parallax"><img src="http://materializecss.com/images/parallax2.jpg"></div>
+    <div class="parallax"><img style="filter:blur(5px)"src="https://cdn.dribbble.com/users/40433/screenshots/4457736/dr_1x.png"></div>
   </div>
 
-  <div class="section white">
+  <div class="section white scrollspy" id="Contact">
     <div class="row container">
         <h2 class="header">Contact Me</h2>
 <form class="" action="/" method="post">
@@ -88,14 +88,10 @@
     </div>
     <div class="row container">
       <hr>
-      <h2 class="header">Social Media</h2>
+      <h2 class="header">LinkedIn</h2>
       <div class="col s12 m8 l3 linha-horizontal-sm">
         <ul>
-          <a rel="nofollow" href="https://www.facebook.com/eadbox" alt="Facebook Eadbox" title="Facebook Eadbox" target="_blank"><i class="fab fa-facebook"></i> </a>
-          <a rel="nofollow" href="https://twitter.com/eadbox" alt="Twitter Eadbox" title="Twitter Eadbox"><i class="fab fa-facebook"></i> </a>
-          <a rel="nofollow" href="https://www.linkedin.com/company/2901419?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1427730383214%2Ctas%3AEadbox" alt="Linkedin Eadbox" title="Linkedin Eadbox" target="_blank"><i class="fab fa-facebook"></i> </a>
-          <a rel="nofollow" href="https://plus.google.com/105121433110736386372" alt="Google Plus Eadbox" title="Google Plus Eadbox" target="_blank"><i class="fab fa-facebook"></i> </a>
-          <a rel="nofollow" href="https://www.youtube.com/user/eadbox" alt="Youtube Eadbox" title="Youtube Eadbox" target="_blank"><i class="fab fa-facebook"></i> </a>
+          <a rel="nofollow" href="https://www.linkedin.com/in/abigail-giambra-36534914a/" alt="Linkedin Eadbox" title="Linkedin Eadbox" target="_blank"><i style="font-size: 3.5em" class="fab fa-linkedin-in"></i> </a>
         </ul>
 
       </div>
@@ -103,9 +99,16 @@
     </div>
   </div>
   <div class="parallax-container">
-    <div class="parallax"><img src="http://materializecss.com/images/parallax2.jpg"></div>
+    <div class="parallax"><img style="filter:blur(5px)" src="https://cdn.dribbble.com/users/316226/screenshots/4196933/dribbble_1_1x.png"></div>
   </div>
+  <div class="section white scrollspy" id="Resume">
+    <div class="row container">
+       <div class="col s12">
+               <h2 class="header center"><a target="_blank" href="https://s3.amazonaws.com/prospects.club/Abigail_Giambra_Resume.pdf">Resume</a></h2>
+             </div>
 
+    </div>
+  </div>
 
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
@@ -117,6 +120,8 @@
   $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('.scrollspy').scrollSpy();
+
     });
 
 
